@@ -71,6 +71,8 @@ let INPUTS: {[name: string]: InputFeature} = {
   "sinX": {f: (x, y) => Math.sin(x), label: "sin(X_1)"},
   "sinY": {f: (x, y) => Math.sin(y), label: "sin(X_2)"},
     "sinY+cosX": {f: (x, y) => Math.sin(y)+Math.cos(x), label: "sin(X_2)+cos(X_1)"}
+    "Angulo": {f: (x, y) => Math.atan(y/x), label: "arctan(X_2/X_1)"}
+    "Angulo*Distancia": {f: (x, y) => Math.atan(y/x)*Math.sqrt(y*y + x*x), label: "arctan(X_2/X_1)*sqrt(X_1^2+X_2^2)"}
 };
 
 let HIDABLE_CONTROLS = [
